@@ -11,7 +11,9 @@ app.use(cors());
 app.use(morgan('dev'));
 
 //Import endpoint's routers
+const route = require('./routes/routes');
 
 //Endpoints
+app.use('/api_cs', route(express));
 
 module.exports = app;

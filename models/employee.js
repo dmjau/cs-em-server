@@ -20,11 +20,11 @@ module.exports = (sequelize, DataTypes) => {
       tableName: 'employees'
     }
   );
-  item.associate = function (models) {
-    item.belongsTo(models.company, {
+  employee.associate = function (models) {
+    employee.belongsTo(models.company, {
       as: 'company',
       foreignKey: 'company_id'
     });
   };
-  return item;
+  return employee;
 };
