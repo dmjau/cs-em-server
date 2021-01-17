@@ -76,7 +76,15 @@ self.getById = async (req, res) => {
 self.register = async (req, res) => {
   try {
     let body = req.body;
-    let data = await employee.create(body);
+    let data = await employee.create({
+      company_id: body.company_id,
+      first_name: body.first_name,
+      last_name: body.last_name,
+      birth_day: body.birth_day,
+      employee_type: body.employee_type,
+      designer_type: body.designer_type,
+      programming_language: body.programming_language
+    });
     return res.json({
       data: data
     });
