@@ -18,9 +18,9 @@ module.exports = function (express) {
   /* POST a new employee */
   route.post('/employees', employeeCtrl.register);
   /* UPDATE employee by id */
-  route.put('/employees/:id', employeeCtrl.update);
+  route.patch('/employees/:id', employeeCtrl.updateEmp);
   /* DELETE employee by id */
-  route.delete('/employees/:id', employeeCtrl.delete);
+  route.delete('/employees/:id', employeeCtrl.deleteEmp);
 
   return route;
 };

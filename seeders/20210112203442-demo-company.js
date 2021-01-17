@@ -6,7 +6,7 @@ module.exports = {
       'Companies',
       [
         {
-          name: 'EMPRESA PRUEBA 1'
+          name: 'SHELBY BROTHERS COMPANY L.T.D.A.'
         }
       ],
       {}

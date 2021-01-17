@@ -97,7 +97,7 @@ self.register = async (req, res) => {
 };
 
 //UPDATE employee by id
-self.update = async (req, res) => {
+self.updateEmp = async (req, res) => {
   try {
     let id = req.params.id;
     let body = req.body;
@@ -118,7 +118,7 @@ self.update = async (req, res) => {
 };
 
 //DELETE employee by id
-self.delete = async (req, res) => {
+self.deleteEmp = async (req, res) => {
   try {
     let id = req.params.id;
     let data = await employee.destroy({
