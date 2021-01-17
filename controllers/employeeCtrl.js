@@ -101,6 +101,7 @@ self.updateEmp = async (req, res) => {
   try {
     let id = req.params.id;
     let body = req.body;
+    console.log(body);
     let data = await employee.update(body, {
       where: {
         id: id

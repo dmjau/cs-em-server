@@ -8,7 +8,7 @@ module.exports = function (express) {
   /* GET all companies */
   route.get('/companies', companyCtrl.get);
   /* UPDATE company by id */
-  route.put('/companies/:id', companyCtrl.update);
+  route.patch('/companies/:id', companyCtrl.update);
 
   //Employees routes
   /* GET all employees */
